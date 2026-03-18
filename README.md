@@ -1,7 +1,7 @@
 # Desafio Fullstack
 
 ### Modelagem das Tabelas:
-
+- A estrutura do banco foi pensada para ser simples, escalável e bem relacionada, garantindo integridade dos dados e facilidade de manutenção:
 ```sql
 CREATE TABLE checklists_templates (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
@@ -43,4 +43,10 @@ CREATE TABLE resultados_etapas (
 ```
 ## Contorno aos limite de créditos da IA (V0)
 
-Limitei-me a apenas prompts essenciais, visando uma boa engenharia de prompts para a economia dos tokens. Também foi feita uma escolha minunciosa do modelo da IA que iria fazer os códigos devido ao limite dos tokens, com o objetivo de ter um custo-benefício foi escolhido o **v0 Pro** para a geração. Sobre os prompts, busquei ajuda de outros Agentes, como o Gemini, para melhorar todos os prompts pensados. Entretanto, o que diria que foi o mais essencial para contornar o limite de créditos, foi a criação e documentação de toda a engenharia do "App". [Documentação](v0.md).
+Para lidar com as limitações de crédito, optei por uma abordagem mais estratégica e consciente no uso da IA. Evitei desperdício de tokens ao máximo, focando apenas em prompts realmente essenciais. Isso exigiu uma engenharia de prompts mais refinada. Cada solicitação precisava ser clara, objetiva e bem pensada antes de ser executada. Outro ponto importante foi a escolha do modelo. Pensando em custo-benefício, utilizei o v0 Pro, que entregava bons resultados sem consumir créditos de forma exagerada. Além disso, contei com o apoio de outros agentes, como o Gemini, para revisar e melhorar os prompts. Essa colaboração ajudou a extrair respostas mais completas com menos tentativas. Mas, sem dúvida, o fator mais decisivo foi a preparação: documentar toda a estrutura do aplicativo antes de começar. Isso reduziu drasticamente retrabalho e uso desnecessário da IA. [Acessar Documentação](v0.md).
+
+## Resumo da Jornada
+
+Essa experiência foi muito além de apenas “codar”. Ela reforçou na prática a importância do conceito de Build to Learn — aprender construindo, mas com intenção e estratégia. Percebi que, antes de sair escrevendo código (mesmo com ajuda de IA), é fundamental parar, pensar e estruturar bem o projeto. Essa etapa de planejamento, muitas vezes ignorada, faz toda a diferença no resultado final.
+
+Mesmo em um cenário de Vibe Coding, onde tudo parece mais rápido e informal, a base continua sendo a mesma: clareza, organização e visão de longo prazo. Na minha visão, essa habilidade de estruturar antes de executar é algo essencial para qualquer desenvolvedor em formação, seja no ensino técnico, na faculdade ou de forma autodidata.
